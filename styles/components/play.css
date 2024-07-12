@@ -1,0 +1,153 @@
+.play__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.play__text {
+  text-align: center;
+  font-size: var(--size-sm);
+}
+.humanChoice {
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-base);
+}
+.computerChoice {
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-base);
+}
+
+.play__selection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#choose {
+  width: 150px;
+  margin-inline: auto;
+  padding: 2px;
+  font-size: var(--size-sm);
+}
+
+.play__button {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 100px;
+  margin-inline: auto;
+  font-size: var(--size-base);
+}
+/* xs */
+@media (min-width: 475px) {
+  .play__text {
+    font-size: var(--size-base);
+  }
+  .humanChoice {
+    font-size: var(--size-lg);
+  }
+  .computerChoice {
+    font-size: var(--size-lg);
+  }
+
+  #choose {
+    width: 170px;
+    font-size: var(--size-base);
+  }
+
+  .play__button {
+    font-size: var(--size-lg);
+  }
+}
+
+/* Sm */
+@media (min-width: 640px) {
+  .play__text {
+    font-size: var(--size-lg);
+  }
+  .humanChoice {
+    font-size: var(--size-xl);
+    width: 120px;
+    height: 60px;
+  }
+  .computerChoice {
+    font-size: var(--size-xl);
+    width: 120px;
+    height: 60px;
+  }
+
+  #choose {
+    width: 170px;
+    font-size: var(--size-base);
+  }
+
+  .play__button {
+    font-size: var(--size-lg);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .play__text {
+    font-size: var(--size-xl);
+  }
+  .humanChoice {
+    font-size: var(--size-xl);
+    width: 140px;
+    height: 70px;
+  }
+  .computerChoice {
+    font-size: var(--size-xl);
+    width: 140px;
+    height: 70px;
+  }
+
+  #choose {
+    width: 190px;
+    font-size: var(--size-lg);
+  }
+
+  .play__button {
+    font-size: var(--size-xl);
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  .play__text {
+    font-size: var(--size-xl);
+  }
+  .humanChoice {
+    font-size: var(--size-xl);
+  }
+  .computerChoice {
+    font-size: var(--size-xl);
+  }
+
+  #choose {
+    width: 200px;
+    font-size: var(--size-xl);
+  }
+
+  .play__button {
+    font-size: var(--size-2xl);
+  }
+}
+
+/* xL */
+/* @media (min-width: 1280px) {}  */
+
+/* 2xL */
+/* @media (min-width: 1536px) {} */

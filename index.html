@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div>
+        <h1 class="header__title">Rock - Paper - Scissors</h1>
+        <p class="header__text"><a>First score to 10 points wins!</a></p>
+      </div>
+      <img
+        class="header__img"
+        src="rps.png"
+        alt="rps logo"
+        width="512px"
+        height="512px"
+      />
+    </header>
+    <main>
+      <section class="scoreboard container section">
+        <h1 class="scoreboard__title">Scoreboard</h1>
+        <div class="scoreboard__box">
+          <div>
+            <h5 class="scoreboard__text">Human</h5>
+            <div class="humanScore">0</div>
+          </div>
+          <div>
+            <h5 class="scoreboard__text">Computer</h5>
+            <div class="computerScore">0</div>
+          </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="color__box">
+          <div class="color__seperator1">Win</div>
+          <div class="color__seperator2">Draw</div>
+          <div class="color__seperator3">Lose</div>
+        </div>
+      </section>
+
+      <section class="play container section">
+        <div class="play__box">
+          <div>
+            <h5 class="play__text">Human</h5>
+            <div class="humanChoice">?</div>
+          </div>
+          <p>VS</p>
+          <div>
+            <h5 class="play__text">Computer</h5>
+            <div class="computerChoice">?</div>
+          </div>
+        </div>
+
+        <br />
+        <div class="play__selection">
+          <select id="choose" name="choices">
+            <option value="" disabled selected>Choose an option</option>
+            <option value="rock🪨">rock🪨</option>
+            <option value="paper📃">paper📃</option>
+            <option value="scissors✂️">scissors✂️</option>
+          </select>
+
+          <button class="play__button btn">Play!</button>
+        </div>
+      </section>
+      <section class="restart container section">
+        <div class="restart__box">
+          <button class="reset__btn btn">Restart</button>
+        </div>
+        <canvas id="confetti"></canvas>
+      </section>
+
+      <section class="container">
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1 class="modal__text">Game Over!</h1>
+          <button class="show-modal" id="reset__btn">Try again</button>
+        </div>
+        <div class="overlay hidden"></div>
+      </section>
+    </main>
+    <!-- <footer></footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
