@@ -86,7 +86,7 @@ const addScoreComputer = () => {
   currentScore += 1;
   computerScore.textContent = currentScore;
 
-  if (currentScore >= 5) {
+  if (currentScore >= 10) {
     openModal();
     restartGame();
   }
@@ -98,7 +98,7 @@ const addScoreHuman = () => {
   currentScore += 1;
   humanScore.textContent = currentScore;
 
-  if (currentScore >= 5) {
+  if (currentScore >= 10) {
     openModal();
     restartGame();
   }
